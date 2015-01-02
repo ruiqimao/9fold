@@ -9,6 +9,7 @@ h1 {
 	margin:0;
 	padding:1rem;
 	padding-top:2rem;
+	padding-bottom:1.5rem;
 	width:100%;
 	box-sizing:border-box;
 	text-align:center;
@@ -22,6 +23,7 @@ h1 {
 	width:500px;
 	padding-bottom:500px;
 	margin:auto;
+	margin-top:1rem;
 }
 
 .game {
@@ -148,6 +150,22 @@ h1 {
 .continue-button:active {
     background:#FFFFFF;
     color:#000000;
+}
+
+.refresh-button {
+	position:absolute;
+	z-index:2;
+	left:50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background:transparent;
+	border:none;
+	color:#CC7777;
+}
+
+.refresh-button:active {
+	color:#AA5555;
 }
 
 .instructions {

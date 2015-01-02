@@ -177,6 +177,14 @@ $(".continue-button").click(function() {
 	$(".win-overlay").fadeOut();
 });
 
+$(".refresh-button").click(function() {
+	generateGrid();
+	updateObjects();
+	continued = false;
+	$(".lose-overlay").fadeOut();
+	$(".win-overlay").fadeOut();
+});
+
 $(document).ready(function() {
 	generateGrid();
 	updateObjects();
