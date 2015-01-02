@@ -107,10 +107,14 @@ function check() {
 		}
 	}
 	if(won) {
-		$(".win-overlay").fadeIn();
+		setTimeout(function() {
+			$(".win-overlay").fadeIn();
+		},1000);
 	}else
 	if(lost) {
-		$(".lose-overlay").fadeIn();
+		setTimeout(function() {
+			$(".lose-overlay").fadeIn();
+		},1000);
 	}
 }
 
