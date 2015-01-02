@@ -143,6 +143,12 @@ h1 {
 	font-family:Roboto;
 }
 
+.social-button {
+	float:left;
+	padding-left:0.5rem;
+	padding-right:0.5rem;
+}
+
 @media (max-width:600px) {
 	
 	.game-wrapper {
