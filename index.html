@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>8fold</title>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/main.css" type="text/css" rel="stylesheet" />
+        <link href="css/index.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<h1><font color="#CC7777">8</font><font color="#AA8888">fold</font></h1>
+		<div class="game-wrapper">
+			<div class="game">
+				<div class="lose-overlay">
+					<div>
+						Game Over
+						<button class="game-button">Play Again</button>
+					</div>
+				</div>
+				<div class="win-overlay">
+					<div>
+						You Win!
+						<button class="game-button">Play Again</button>
+					</div>
+				</div>
+				<div class="objects">
+					<div class="object" id="00" data-x="0" data-y="0"><span></span></div>
+					<div class="object" id="10" data-x="1" data-y="0"><span></span></div>
+					<div class="object" id="20" data-x="2" data-y="0"><span></span></div>
+					<div class="object" id="30" data-x="3" data-y="0"><span></span></div>
+					<div class="object" id="01" data-x="0" data-y="1"><span></span></div>
+					<div class="object" id="11" data-x="1" data-y="1"><span></span></div>
+					<div class="object" id="21" data-x="2" data-y="1"><span></span></div>
+					<div class="object" id="31" data-x="3" data-y="1"><span></span></div>
+					<div class="object" id="02" data-x="0" data-y="2"><span></span></div>
+					<div class="object" id="12" data-x="1" data-y="2"><span></span></div>
+					<div class="object" id="22" data-x="2" data-y="2"><span></span></div>
+					<div class="object" id="32" data-x="3" data-y="2"><span></span></div>
+					<div class="object" id="03" data-x="0" data-y="3"><span></span></div>
+					<div class="object" id="13" data-x="1" data-y="3"><span></span></div>
+					<div class="object" id="23" data-x="2" data-y="3"><span></span></div>
+					<div class="object" id="33" data-x="3" data-y="3"><span></span></div>
+				</div>
+			</div>
+		</div>
+		<div class="instructions">
+			Click or tap on a square to fold its area and increase its value by one. Try to get to 8!
+			<br />
+			<br />
+			Created by <a href="http://www.ruiqimao.com/" target="_blank">Ruiqi Mao</a>.
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
