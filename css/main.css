@@ -145,13 +145,21 @@ h1 {
 
 .social-buttons {
 	width:100%;
+	max-width:400px;
 	text-align:center;
 }
 
 .social-button {
-	display:inline;
-	padding-left:0.5rem;
-	padding-right:0.5rem;
+	padding-left:1rem;
+	padding-right:1rem;
+}
+
+.facebook {
+	float:left;
+}
+
+.twitter {
+	float:right;
 }
 
 @media (max-width:600px) {
