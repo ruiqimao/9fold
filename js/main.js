@@ -109,12 +109,12 @@ function check() {
 	if(won) {
 		setTimeout(function() {
 			$(".win-overlay").fadeIn();
-		},1000);
+		},500);
 	}else
 	if(lost) {
 		setTimeout(function() {
 			$(".lose-overlay").fadeIn();
-		},1000);
+		},500);
 	}
 }
 
