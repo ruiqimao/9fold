@@ -133,6 +133,23 @@ h1 {
 	color:#000000;
 }
 
+.continue-button {
+    padding:1rem;
+    padding-left:1.5rem;
+    padding-right:1.5rem;
+    font-size:1.2rem;
+    color:#FFFFFF;
+    background:transparent;
+    border:1px solid #FFFFFF;
+    border-radius:0.8rem;
+    margin-top:1rem;
+}
+
+.continue-button:active {
+    background:#FFFFFF;
+    color:#000000;
+}
+
 .instructions {
 	width:100%;
 	max-width:600px;

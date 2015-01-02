@@ -1,6 +1,8 @@
-var colors = ['#000000','#CC7777','#CC8F77','#CCBB77','#AFCC77','#77CC93','#77ADCC','#777FCC','#BD77CC','#E249AE'];
+var colors = ['#000000','#CC7777','#CC8F77','#CCBB77','#AFCC77','#77CC93','#77ADCC','#777FCC','#BD77CC','#E249AE','#E24962'];
 
 var grid = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]];
+
+var continued = false;
 
 function randInt(min,max) {
 	var range = max-min+1;
@@ -40,6 +42,7 @@ function updateObjects() {
 			if(value > 0) {
 				var object = $("#"+i+""+y);
 				object.children().first().text(value);
+				if(value > 10) value = 10;
 				object.css({'left':i*25+'%','top':(j-4)*25+'%','background':colors[value]});
 				y --;
 			}
@@ -96,7 +99,7 @@ function check() {
 	for(var i = 0; i < 4; i ++) {
 		for(var j = 0; j < 4; j ++) {
 			var value = grid[j+4][i];
-			if(value == 9) won = true;
+			if(value == 9 && !continued) won = true;
 			if(i > 0) if(grid[j+4][i-1] == value) lost = false;
 			if(i < 3) if(grid[j+4][i+1] == value) lost = false;
 			if(j > 0) if(grid[j+3][i] == value) lost = false;
@@ -160,7 +163,13 @@ $(".object").click(function() {
 $(".game-button").click(function() {
 	generateGrid();
 	updateObjects();
+	continued = false;
 	$(".lose-overlay").fadeOut();
+	$(".win-overlay").fadeOut();
+});
+
+$(".continue-button").click(function() {
+	continued = true;
 	$(".win-overlay").fadeOut();
 });
 
