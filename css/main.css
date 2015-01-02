@@ -143,8 +143,13 @@ h1 {
 	font-family:Roboto;
 }
 
+.social-buttons {
+	width:100%;
+	text-align:center;
+}
+
 .social-button {
-	float:left;
+	display:inline;
 	padding-left:0.5rem;
 	padding-right:0.5rem;
 }
