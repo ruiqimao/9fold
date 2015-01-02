@@ -1,4 +1,4 @@
-var colors = ['#000000','#CC7777','#CC8F77','#CCBB77','#AFCC77','#77CC93','#77ADCC','#777FCC','#BD77CC'];
+var colors = ['#000000','#CC7777','#CC8F77','#CCBB77','#AFCC77','#77CC93','#77ADCC','#777FCC','#BD77CC','#E249AE'];
 
 var grid = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]];
 
@@ -96,7 +96,7 @@ function check() {
 	for(var i = 0; i < 4; i ++) {
 		for(var j = 0; j < 4; j ++) {
 			var value = grid[j+4][i];
-			if(value == 8) won = true;
+			if(value == 9) won = true;
 			if(i > 0) if(grid[j+4][i-1] == value) lost = false;
 			if(i < 3) if(grid[j+4][i+1] == value) lost = false;
 			if(j > 0) if(grid[j+3][i] == value) lost = false;
