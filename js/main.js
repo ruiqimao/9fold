@@ -108,6 +108,7 @@ function check() {
 	}
 	if(won) {
 		setTimeout(function() {
+			if(lost) $(".continue-button").hide() else $(".continue-button").show();
 			$(".win-overlay").fadeIn();
 		},500);
 	}else
